@@ -19,12 +19,7 @@ int main()
     {
         printf("You have failed due to low marks in one or more subjects.\n");
     }
-    else
-    {
-        printf("You have passed in all individual subjects.\n");
-
-    // Check if the overall percentage is less than 40
-    if ((subject_1 + subject_2 + subject_3) / 3 < 40)
+    else if ((subject_1 + subject_2 + subject_3) / 3 < 40)
     {
         printf("You have failed due to insufficient total marks.\n");
     }
@@ -32,7 +27,5 @@ int main()
     {
         printf("You have passed the exam.\n");
     }
-    }
-
     return 0;
 }
